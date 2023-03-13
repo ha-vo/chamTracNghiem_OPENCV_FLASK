@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="container text-center">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for categories, message in messages %}
+                {% if categories == "error" %}
+                    <div class="alert alert-danger">{{ message }}</div>
+                {% else %}
+                    <div class="alert alert-success">{{ message }}</div>
+            {% endif %}            
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <div class="row border border-dark rounded bg-light fs-4 my-5" style="margin-left: 300px; margin-right: 300px;  height: 200px; padding-top: 75px; padding-left: 10px;">
+            Tạo cho việc chấm điểm của bạn dễ dàng hơn với autograding
+        </div>
+        <a href="{{url_for('login')}}" class="text-decoration-none"><button type="submit" class="btn btn-primary my-3" style="display: block; margin-left: 570px; width: 150px;">Đăng nhập</button></a>       
+            or
+        <a href="{{url_for('signup')}}" class="text-decoration-none"><button type="submit" class="btn btn-primary my-3" style="display: block; margin-left: 570px;  width: 150px">Đăng ký</button></a>
+    </div>
+{% endblock %}

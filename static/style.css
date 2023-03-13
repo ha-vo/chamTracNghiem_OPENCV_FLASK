@@ -1,0 +1,7 @@
+.body{
+    background-image: url("background.webp");
+    opacity: 0.9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="container">
+        <form method="POST" action="">
+            <fieldset class="row mt-5 p-5 bg-light text-center" style="border:1px solid ; border-radius: 10px; height: 600px;margin-left: 250px;margin-right: 250px;">
+                <h2>Đăng nhập</h2>
+                <div class="row" style="margin-bottom: 20px;">
+                    username
+                    <input type="text" class="" style="border:1px solid ; border-radius: 10px;" placeholder="Nhập vào username" name="user" id="user">
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    email
+                    <input type="text" class="" style="border:1px solid ; border-radius: 10px;" placeholder="Nhập vào email" name="email" id="email">
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    password
+                    <input type="text" class="" style="border:1px solid ; border-radius: 10px;" placeholder="Nhập vào password" name="pass" id="pass">
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary my-3" style="display: block; margin-left: 570px;  width: 150px">Đăng nhập </button>
+                </div>
+            </f>
+        </form>
+    </div>
+{% endblock %}
